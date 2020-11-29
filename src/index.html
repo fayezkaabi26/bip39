@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/app.css">
         <link rel="stylesheet" href="css/search_bar_css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <meta content="Mnemonic code for generating deterministic keys" name="description"/>
         <meta content="width=device-width, initial-scale=1.0" name="viewport" />
         <meta content="bitcoin mnemonic converter" name="description" />
@@ -22,14 +23,10 @@
                 <div class="col-md-12">
                     <h2>Mnemonic</h2>
                     <form class="form-horizontal" role="form">
-                        <div class="wrap">
-                            <div class="search">
-                                <input type="text" class="searchTerm" placeholder="What are you looking for?">
-                                <button type="submit" class="searchButton">
-                                    <i class="fa fa-search"></i>
-                                </button>
-                            </div>
-                        </div>
+                        <form class="example" action="action_page.php">
+                            <input type="text" placeholder="Search.." name="search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
                         <div class="form-group generate-container">
                             <label class="col-sm-2 control-label"></label>
                             <div class="col-sm-10">
