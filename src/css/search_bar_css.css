@@ -1,11 +1,4 @@
-/* Style the search field */
-form.example input[type=text] {
+textarea {
   width: 300px;
-}
-
-/* Clear floats */
-form.example::after {
-  content: "";
-  clear: both;
-  display: table;
+  height: 150px;
 }

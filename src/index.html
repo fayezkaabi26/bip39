@@ -17,13 +17,12 @@
         <div class="container">
 
             <h1 class="text-center">Standalone Vanity</h1>
-            <p class="version">v0.5.0</p>
             <hr>
             <div class="row">
                 <div class="col-md-12">
                     <h2>Mnemonic</h2>
                     <form class="form-horizontal" role="form">
-                        <textarea id="phrase" class="phrase private-data form-control" data-show-qr="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+                        <br>
                         <div class="form-group generate-container">
                             <label class="col-sm-2 control-label"></label>
                             <div class="col-sm-10">
@@ -42,6 +41,9 @@
                                             <option value="24">24</option>
                                         </select>
                                         <span>words, or enter your own below</span>.
+                                        <br>
+                                        <br>
+                                        <textarea id="phrase" class="phrase private-data form-control" data-show-qr="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Enter your mnemonic here.." style="width:570px; height:45px;"></textarea>
                                         <p class="warning help-block hidden">
                                             <span class="text-danger">
                                                 Mnemonics with less than 12 words have low entropy and may be guessed by an attacker.
