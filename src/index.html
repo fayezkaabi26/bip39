@@ -10,6 +10,12 @@
         <meta content="width=device-width, initial-scale=1.0" name="viewport" />
         <meta content="bitcoin mnemonic converter" name="description" />
         <link type="image/x-icon" rel="icon" href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAYAAABPYyMiAAAABmJLR0T///////8JWPfcAAAACXBIWXMAAABIAAAASABGyWs+AAAAF0lEQVRIx2NgGAWjYBSMglEwCkbBSAcACBAAAeaR9cIAAAAASUVORK5CYII=" />
+        <script>
+            function myFunction() {
+                var address_letters = document.getElementById("address_first_letters");
+                alert(address_letters.value);
+            }
+        </script>
     </head>
     <body>
         <div class="container">
@@ -23,7 +29,7 @@
                         <div class="form-group">
                             <label class="col-sm-2 control-label">The start of your vanity address:</label>
                             <div class="col-sm-10">
-                                <input  style="height:50px;" type="text" id="address_first_letters" class="form-control" placeholder="Enter the first address letters" required />
+                                <input onchange="myFunction()" maxlength="6" style="height:46px;" type="text" id="address_first_letters" class="form-control" placeholder="Enter the first address letters (6 characters max.)" required />
                             </div>
                         </div>
 
@@ -32,8 +38,6 @@
                             <div class="col-sm-10">
                                 <div class="form-inline">
                                     <div class="input-group-inline">
-                                         <span>Generate a random mnemonic</span>:
-                                        <button class="btn generate" ><b>GENERATE</b></button>
                                         <select id="strength" class="strength form-control">
                                             <option value="3">3</option>
                                             <option value="6">6</option>
